@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Inconsolata:wght@200;300&display=swap');
+
+*{
+    margin: auto 0;
+}
+
+body{
+ 
+    background: rgba(172, 224, 129, 0.767);
+    font-family: Cormorant, sans-serif;
+    color: rgb(47, 126, 47);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0 0 7em rgba(2, 12, 4, 0.904);
+ }
+ .princess{
+    width: 10%;
+    padding: 0;
+    position: relative;
+    left: 0%;
+
+ }
+span{
+    color: rgb(84, 184, 38);
+    font-size: 42px;
+    text-shadow: 2px 1px rgb(212, 230, 214) ;
+}
+p{
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.texto, .texto2, .texto3{
+      
+    font-weight: bold ;
+    overflow: hidden;
+    border-right: 2px solid rgb(16, 163, 151);
+    font-size: 30px;
+    width: 0;
+    white-space: nowrap;
+    animation: typing 6s steps(40, end) forwards,
+    blink .8s infinite;
+}
+
+.texto3{
+    animation: typing3 6s steps(40, end) forwards, blink .8s infinite;
+}
+
+.container{
+   
+    display: inline-block;
+    width: 50%;
+  
+}
+@keyframes typing {
+   
+    33% {
+        width: 35ch;
+       
+    }
+    100%{
+        width: 35ch;
+}
+}
+
+
+@keyframes typing3{
+
+    0% {
+        width: 0ch;
+        opacity: 0;
+    }
+ 
+    33%{
+        width: 0ch;
+        opacity: 0;
+    }
+    66%{
+        width: 0ch;
+        opacity: 1;
+    }
+
+    100%{
+        width: 46ch;
+        opacity: 1;
+    }
+    
+} 
+@keyframes blink {
+    from {border-color: transparent;}
+    to { border-color: rgb(16, 163, 151)}
+}
